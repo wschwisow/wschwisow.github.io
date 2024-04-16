@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Whitney Schwisow">
-<meta name="dcterms.date" content="2024-04-04">
+<meta name="dcterms.date" content="2024-04-15">
 
-<title>Whitney Schwisow’s Sports Blog - Can you use maching learning to win NCAA Bracket Challenge 2024?</title>
+<title>Whitney Schwisow’s Sports Blog - Can you use maching learning to win the NCAA Bracket Challenge 2024?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Can you use maching learning to win NCAA Bracket Challenge 2024?</h1>
+      <h1 class="title">Can you use maching learning to win the NCAA Bracket Challenge 2024?</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">ncaa</div>
                 <div class="quarto-category">machinelearning</div>
@@ -171,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 4, 2024</p>
+        <p class="date">April 15, 2024</p>
       </div>
     </div>
     
@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>The March Madness tournament challenge looked different this year for me. Typically, I crank out a bracket approximately ten minutes before the first tournament game with my only knowledge of the college basketball season being the two Nebraska games I had watched over the course of the four month season. This year was not much different in terms of my NCAA basketball knowledge, but I had a new tool in my belt for making selections: a predictive model.</p>
+<p>The March Madness tournament challenge looked different for me this year. Typically, I crank out a bracket approximately ten minutes before the first tournament game with my only knowledge of the college basketball season being the two Nebraska games I had watched over the course of the four month season. This year was not much different in terms of my NCAA basketball knowledge, but I had a new tool in my belt for making selections: a predictive model.</p>
 <p>As I sit here today and reflect on my March Madness tournament bracket predictive model, I can’t help but think about how much I hate being average. Out of the 11 brackets, mine came in 4th place. I was in the 77th percentile, which felt okay until I realized that my model was six millionth place. What feels worse is that my personal bracket was in the 82nd percentile (reminder: I know nothing about NCAA basketball).</p>
 <p>My one glimmer of hope is that my bracket beat Gunnar’s, hereby proving that I am the smartest actuarial science major in SPMC 460 (#CoJMCFamily).</p>
 <p>The following is a look inside my thoughts as I built what I thought would be the winning model.</p>
@@ -1600,7 +1600,8 @@ The following objects are masked from 'package:base':
 <span id="cb103-7"><a href="#cb103-7" aria-hidden="true" tabindex="-1"></a><span class="co">#newship</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>#Model Decisions</p>
+<section id="model-decisions" class="level1">
+<h1>Model Decisions</h1>
 <p>The two predictors I lived and died by were offensive and defensive efficiency because those predictors alone resulted in a 67.8% test accuracy. When it came time to add more predictors, I overcame my PTSD and thought back to my post-basketball-game chats in high school, where I averaged 1.6 points per game my sophomore year according to MaxPreps (I was not good). I decided to add free throw percentage, rebounding, and turnovers among other variables.</p>
 <div class="cell">
 <details class="code-fold">
@@ -2171,7 +2172,9 @@ The following objects are masked from 'package:base':
 <figcaption>East Region Bracket Predictions</figcaption>
 </figure>
 </div>
-<p>#The Predictions</p>
+</section>
+<section id="the-predictions" class="level1">
+<h1>The Predictions</h1>
 <p>After using my model to predict the NCAA tournament bracket, the East region performed the best points wise. I went 8-7, which is not great, but managed to earn 200 points due largely to sending UConn to the Final Four. This was my only correct Final Four pick. My model selected one upset in the first round of the east region, and it did not hit. I had BYU going to the Sweet 16, so them losing first round was a tough blow.</p>
 <p>The greatest flaw my bracket endured was taking Saint Mary’s and McNeese to the Final Four. Saint Mary’s ended up losing in the first round as a 5 seed. McNeese got stomped by Gonzaga in the first round, sending the 12 seed home. I was initially proud that my Final Four wasn’t chalk, but these two teams did not play out well for me. Looking back, the variable I wish I had in my model to help this situation was strength of schedule. McNeese’s 30-4 record sounds impressive until you look closer and see that they played the College of Biblical Studies, Champion Christian, and the Mississippi University for Women.</p>
 <p>The win I am most proud of in my bracket was selecting Tennessee over Creighton in the Sweet 16. I was tired of hearing about Baylor Scheierman, so I am thankful my model had Tennessee winning. I was also quite pleased that my model selected James Madison over Wisconsin.</p>
@@ -2184,6 +2187,7 @@ The following objects are masked from 'package:base':
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
