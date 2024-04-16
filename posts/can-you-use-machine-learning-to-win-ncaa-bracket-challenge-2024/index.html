@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()      masks stats::lag()
 ✖ yardstick::spec() masks readr::spec()
 ✖ recipes::step()   masks stats::step()
-• Use suppressPackageStartupMessages() to eliminate package startup messages</code></pre>
+• Use tidymodels_prefer() to resolve common conflicts.</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -2178,7 +2178,7 @@ The following objects are masked from 'package:base':
 <p>After using my model to predict the NCAA tournament bracket, the East region performed the best points wise. I went 8-7, which is not great, but managed to earn 200 points due largely to sending UConn to the Final Four. This was my only correct Final Four pick. My model selected one upset in the first round of the east region, and it did not hit. I had BYU going to the Sweet 16, so them losing first round was a tough blow.</p>
 <p>The greatest flaw my bracket endured was taking Saint Mary’s and McNeese to the Final Four. Saint Mary’s ended up losing in the first round as a 5 seed. McNeese got stomped by Gonzaga in the first round, sending the 12 seed home. I was initially proud that my Final Four wasn’t chalk, but these two teams did not play out well for me. Looking back, the variable I wish I had in my model to help this situation was strength of schedule. McNeese’s 30-4 record sounds impressive until you look closer and see that they played the College of Biblical Studies, Champion Christian, and the Mississippi University for Women.</p>
 <p>The win I am most proud of in my bracket was selecting Tennessee over Creighton in the Sweet 16. I was tired of hearing about Baylor Scheierman, so I am thankful my model had Tennessee winning. I was also quite pleased that my model selected James Madison over Wisconsin.</p>
-<p>If I was to do my model over again, I would change a couple things. First, I would add a strength of schedule variable, which I mentioned earlier. Second, I would have tried to use stepAIC to help me select my final variables. This function helps to choose the best model much quicker than me manually turning variables on and off. It takes into account multicollinearity, which I think probably would have been beneficial for my model. Here’s to improving my model for next year… and to never making random picks 10 minutes before the tournament ever again. And a final thank you to UConn for the 320 points.</p>
+<p>If I was to do my model over again, I would change a couple things. First, I would add a strength of schedule variable, which I mentioned earlier. Second, I would have tried to use stepAIC to help me select my final variables. This function helps to choose the best model much quicker than me manually turning variables on and off. It takes into account multicollinearity, which I think probably would have been beneficial for my model. Here’s to improving my model for next year… and to never making random picks 10 minutes before the tournament ever again. And a final thank you to UConn for the 630 points.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fullbracket.png" class="img-fluid figure-img" style="width:100.0%"></p>
